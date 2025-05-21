@@ -1,0 +1,18 @@
+<%-- 
+    Document   : listar
+    Created on : 21 de mai. de 2025, 16:44:14
+    Author     : Michael
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <jsp:include page="util/menu.jsp" />
+        <h1>pagina de listar</h1>
+    </body>
+</html>
