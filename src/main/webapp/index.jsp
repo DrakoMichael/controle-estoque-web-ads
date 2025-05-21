@@ -8,7 +8,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-         <jsp:include page="views/util/menu.jsp" />
+        <jsp:include page="views/util/menu.jsp" />
         <h1>Página index</h1>
     </body>
 </html>
