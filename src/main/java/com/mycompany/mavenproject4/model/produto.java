@@ -5,6 +5,7 @@
 package com.mycompany.mavenproject4.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 /**
@@ -13,8 +14,12 @@ import javax.persistence.Id;
  */
 @Entity
 public class produto {
+
     @Id
     private String id_produto;
+    //não faz sentido ter @GenerateValue nesse id_produto,
+    //melhor implementar isso em outra parte específica do código
+
     private String Descricao;
     private int preco_unitario;
     private int estoque_atual;

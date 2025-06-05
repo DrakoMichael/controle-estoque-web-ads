@@ -5,7 +5,6 @@
 package com.mycompany.mavenproject4.model;
 
 import java.io.Serializable;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -33,7 +32,8 @@ public class item_venda implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_item;
 
-    private int id_venda; // você pode modelar isso como entidade também, veja nota abaixo
+
+    private int id_venda;
 
     @ManyToOne
     @JoinColumn(name = "id_produto")
@@ -45,53 +45,6 @@ public class item_venda implements Serializable {
 
     private int subtotal;
 
-    // Getters e Setters
+    // precisa implementar Getters e Setters 
 
-    public int getId_item() {
-        return id_item;
-    }
-
-    public void setId_item(int id_item) {
-        this.id_item = id_item;
-    }
-
-    public int getId_venda() {
-        return id_venda;
-    }
-
-    public void setId_venda(int id_venda) {
-        this.id_venda = id_venda;
-    }
-
-    public Produto getProduto() {
-        return produto;
-    }
-
-    public void setProduto(Produto produto) {
-        this.produto = produto;
-    }
-
-    public int getQuantidade() {
-        return quantidade;
-    }
-
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
-    }
-
-    public int getPreco_unitario() {
-        return preco_unitario;
-    }
-
-    public void setPreco_unitario(int preco_unitario) {
-        this.preco_unitario = preco_unitario;
-    }
-
-    public int getSubtotal() {
-        return subtotal;
-    }
-
-    public void setSubtotal(int subtotal) {
-        this.subtotal = subtotal;
-    }
 }
